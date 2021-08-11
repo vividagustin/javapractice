@@ -20,11 +20,12 @@ public class DisplayMultiples {
        int multiples = 1;
        
        //Have the user enter a number, and then use a for loop to display all the multiples of that number from 1 to 12.  
-       for(index = 0; index < 12; index++){         //loop 12 times
-           number[index] = userInput.nextInt();     //Have the user enter a number
-           multiples *= number[index];              //multiples of the entered number
+       for(index = 0; index < 12; index++){                                                 //loop 12 times
+           System.out.print((index+1) + ". Enter number: ");
+           number[index] = userInput.nextInt();                                             //Have the user enter a number
+           multiples *= number[index];                                                      //multiples of the entered number
        }
-        System.out.println(multiples);              //display all the multiples of that 12 number
+        System.out.println("The multiples of that number from 1 to 12: " + multiples);      //display all the multiples of that 12 number
     }
 
 }
