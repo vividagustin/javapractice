@@ -45,7 +45,11 @@ public class LoopShape {
 
             for (t = 0; t < leg; t++) {                 //looping height
                 for (a = 0; a <= t; a++) {              //looping width
-                    System.out.print("#");
+                    if(a == 0 || t == leg-1 || a == t){
+                        System.out.print("#");
+                    } else {
+                        System.out.print(" ");
+                    }
                 }
                 System.out.println("");                 //to move to the next line/row
             }
